@@ -55,7 +55,7 @@ Logique interne : - Trouve deux comptes avec le même mot de passe (Alerte Doubl
 Système : Affiche un tableau récapitulatif : 
 "Attention : 3 alertes de sécurité détectées !"
 
-5. Erreurs probables
+4. Erreurs probables
 
 
 - Fichier absent : le programme ne trouve pas le mot de passe au démarrage.
