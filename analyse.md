@@ -1,4 +1,4 @@
-"Analyse détaillée des exigences et Identification des cas d'utilisation et scénarios
+Analyse détaillée des exigences et Identification des cas d'utilisation et scénarios
 
 1. Analyse des Exigences 
 
@@ -55,7 +55,40 @@ Logique interne : - Trouve deux comptes avec le même mot de passe (Alerte Doubl
 Système : Affiche un tableau récapitulatif : 
 "Attention : 3 alertes de sécurité détectées !"
 
-"
+5. Erreurs probables
+
+
+- Fichier absent : le programme ne trouve pas le mot de passe au démarrage.
+
+Solution : Créer automatiquement une liste vide au lieu de planter.
+
+- Fichier corrompu : le fichier JSON contient du texte qui n'est pas du JSON valide (ex: modification manuelle).
+
+Solution : alerter l'utilisateur et proposer de sauvegarder le fichier corrompu sous un autre nom avant d'en créer un neuf.
+
+- Erreur de permission : le programme n'a pas les droits d'écriture dans le dossier.
+ 
+- Type de données incorrect : Saisir "douze" au lieu de 12 pour la longueur du mot de passe.
+
+- Valeurs hors limites : Demander une longueur entre 8 et 64
+
+- Champs vides : Tenter d'enregistrer un compte sans nom de site ou sans catégorie.
+
+- Doublon de site : Essayer d'ajouter un compte "Gmail" alors qu'il existe déjà.
+
+Solution : Demander à l'utilisateur s'il veut mettre à jour le compte existant ou annuler.
+
+- Catégorie inexistante : Saisir une catégorie qui n'est pas dans la liste prédéfinie (Banque, Email, etc.).
+
+- Recherche infructueuse : Rechercher un site qui n'existe pas dans la base de données.
+
+Solution : Afficher un message clair "Aucun résultat trouvé" plutôt qu'un tableau vide.
+
+- Erreurs de Sécurité (Logique d'analyse) : Entropie nulle, tenter d'analyser un mot de passe vide.
+
+- Format de date invalide : Si la date dans le JSON a été modifiée manuellement et ne peut plus être lue par le module de statistiques.
+
+
 
 
 
