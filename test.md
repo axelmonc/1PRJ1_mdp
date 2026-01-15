@@ -75,7 +75,7 @@ def tester_mdp(mdp):
 tester_mdp("WAKY!muga!fUji@SuwAbi4")
 
 NameError: name 'null' is not defined
-- [ ] test def ajouter_compte() : 
+- [ ] test ajouter_compte() : 
 - [ ] test lister_comptes() :
 - [ ] test rechercher() :
 - [ ] test calculer_stats() :
