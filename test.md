@@ -1,7 +1,7 @@
 - [X] test generer_mdp() : WAKY!muga!fUji@SuwAbi4
-- [] test analyser_force() :
-- [] test def ajouter_compte() : 
-- [] test lister_comptes() :
-- [] test rechercher() :
-- [] test calculer_stats() :
-- [] test sauvegarder() :
+- [ ] test analyser_force() :
+- [ ] test def ajouter_compte() : 
+- [ ] test lister_comptes() :
+- [ ] test rechercher() :
+- [ ] test calculer_stats() :
+- [ ] test sauvegarder() :
