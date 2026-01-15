@@ -15,7 +15,7 @@ def analyser_force(mot_de_passe):
         points_longueur = 20
     # On ajoute les points au score global ici
     score += points_longueur
-    # Drapeaux de détection
+    # Etape de détection
     a_voyelle = False
     a_consonne = False
     a_majuscule = False
