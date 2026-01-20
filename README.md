@@ -75,7 +75,8 @@ Sauvegardé dans l'historique
 
 ```
 1PRJ1_mdp/
-│
+├── analyse.md           # fichier d'analyse des exigences du projet
+├── test.md              # fichier de test des fonctionnalités            
 ├── main.py              # Code principal
 ├── passwords.json       # Fichier de sauvegarde (généré automatiquement)
 ├── README.md            # Documentation
