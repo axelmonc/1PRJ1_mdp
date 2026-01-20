@@ -152,7 +152,9 @@ def ajouter_compte():
     date_creation = datetime.now()
     # Calculer le score immédiatement pour la cohérence
     score, niveau = analyser_force(mdp)
-    mot_de_passes[len(mot_de_passes) + 1] = {
+    cles_numeriques = [int(k) for k in mot_de_passes.keys() if k.isdigit()]
+    nouvelle_cle = str(max(cles_numeriques, default=0) + 1)
+    mot_de_passes[nouvelle_cle] = {
         "Categorie": categorie,
         "Compte": compte,
         "Site": site,
@@ -295,6 +297,35 @@ def sauvegarder():
     except Exception as e:
         print(f"Erreur lors de la sauvegarde : {e}")
 
+def charger_donnees():
+    """
+    fonction qui charge les comptes depuis le fichier JSON s'il existe, sinon initialise une base vide
+    :return: None
+    """
+    global mot_de_passes
+    try:
+        with open("passwords.json", "r", encoding="utf-8") as fichier:
+            data = json.load(fichier)
+            if isinstance(data, dict):
+                mot_de_passes = data
+            else:
+                mot_de_passes = {}
+        # Conversion des dates
+        for val in mot_de_passes.values():
+            if isinstance(val.get("Date"), str):
+                try:
+                    val["Date"] = datetime.strptime(val["Date"], "%Y-%m-%d %H:%M:%S.%f")
+                except ValueError:
+                    val["Date"] = datetime.now()
+        print("Données chargées avec succès.")
+    except FileNotFoundError:
+        mot_de_passes = {}
+        print("Aucun fichier trouvé, base initialisée.")
+    except json.JSONDecodeError:
+        mot_de_passes = {}
+        print("Fichier JSON invalide, base réinitialisée.")
+
+
 
 def menu():
     """
@@ -335,5 +366,5 @@ def menu():
         else:
             print("Choix invalide, veuillez réessayer.")
 
-
+charger_donnees()
 menu()
