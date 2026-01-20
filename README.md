@@ -7,7 +7,7 @@ Application Python permettant de générer des mots de passe sécurisés avec an
 
 ## Fonctionnalités
 
-- Génération de mots de passe personnalisables (8-50 caractères)
+- Génération de mots de passe personnalisables (8-64 caractères)
 - Choix des types de caractères (majuscules, minuscules, chiffres, symboles)
 - Analyse de la force du mot de passe (Faible/Moyen/Fort/Très Fort)
 - Historique des 10 derniers mots de passe générés
@@ -54,11 +54,12 @@ python3 main.py
 === Générateur de Mots de Passe ===
 1. Générer un mot de passe
 2. Analyser la force
-3. Afficher l'historique
-4. Quitter
+3. Ajouter compte
+......
+0. Quitter
 
 Votre choix : 1
-Longueur (8-50) : 16
+Longueur (8-64) : 16
 Inclure majuscules (Oui/Nnon) : Oui
 Inclure minuscules (Oui/Non) : Oui
 Inclure chiffres (Oui/Non) : Oui
@@ -67,7 +68,7 @@ Inclure symboles (Oui/Non) : Oui
 Mot de passe généré : aB7#kL2mN9@pQ5!
 Score : 100/100
 Force : Très Fort
- Sauvegardé dans l'historique
+Sauvegardé dans l'historique
 ```
 
 ## Structure du projet
