@@ -24,8 +24,8 @@ Application Python permettant de générer des mots de passe sécurisés avec an
 
 ```bash
 # Cloner le projet
-git clone https://github.com/axelmonchicourt/1PRJ1.git
-cd generateur-mdp
+git clone https://github.com/axelmonc/1PRJ1_mdp.git
+cd 1PRJ1_mdp
 
 ```
 
