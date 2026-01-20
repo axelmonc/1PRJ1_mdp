@@ -19,7 +19,6 @@ Application Python permettant de générer des mots de passe sécurisés avec an
 - Python 3.8 ou supérieur
 - Modules standard Python (random, string, os)
 
-## Installation et utilisation
 
 ### Installation
 
@@ -41,10 +40,14 @@ python3 main.py
 
 1. Lancez le programme avec `python3 main.py`
 2. Choisissez une option dans le menu :
-   - **1. Générer** : Créer un nouveau mot de passe
-   - **2. Analyser** : Vérifier la force d'un mot de passe existant
-   - **3. Historique** : Afficher les derniers mots de passe générés
-   - **4. Quitter** : Fermer l'application
+   - **1. Générer un mot de passe** : Créer un nouveau mot de passe 
+   - **2. Analyser la force d'un mot de passe** : Vérifie la force du mot de passe
+   - **3. ajouter un compte** : ajoute un mot de passe dans un compte du fichier json
+   - **5. lister les comptes** : Afficher la liste des comptes et mots de passe présent dans le fichier json
+   - **5. rechercher un compte** : recherche si un compte et son mot de passe sont présent dans le fichier json  
+   - **6. Calculer les statistiques** : affiche la force et le compte du mot de passe
+   - **7. sauvegarder un mot de passe** : enregistre automatiquement les comptes et leur mot de passe dans le fichier json  
+   - **0. Quitter** : Ferme l'application
 
 ### Exemple d'utilisation
 
@@ -57,12 +60,13 @@ python3 main.py
 
 Votre choix : 1
 Longueur (8-50) : 16
-Inclure majuscules (O/N) : O
-Inclure minuscules (O/N) : O
-Inclure chiffres (O/N) : O
-Inclure symboles (O/N) : O
+Inclure majuscules (Oui/Nnon) : Oui
+Inclure minuscules (Oui/Non) : Oui
+Inclure chiffres (Oui/Non) : Oui
+Inclure symboles (Oui/Non) : Oui
 
-Mot de passe généré : aB7#kL2$mN9@pQ5!
+Mot de passe généré : aB7#kL2mN9@pQ5!
+Score : 100/100
 Force : Très Fort
  Sauvegardé dans l'historique
 ```
@@ -73,9 +77,9 @@ Force : Très Fort
 generateur-mdp/
 │
 ├── main.py              # Code principal
-├── historique.txt       # Fichier de sauvegarde (généré automatiquement)
+├── donnees.json       # Fichier de sauvegarde (généré automatiquement)
 ├── README.md            # Documentation
-└── .gitignore           # Fichiers ignorés par Git
+
 ```
 
 ## Tests effectués
@@ -86,18 +90,19 @@ generateur-mdp/
 - Gestion des erreurs de saisie
 - Sauvegarde et lecture de l'historique
 - Calcul correct des scores de force
+- sauvegarde avec succès des copptes dans le fichier
 
 ## Équipe
 
-- **Nom Prénom** - Développeur principal
-- **Nom Prénom** - Développeur
-- **Nom Prénom** - Développeur
+- **Monchicourt Axel** - Développeur principal
+- **Sidibe Aboubakr Sidick** - Développeur
+- **Kouadio Oceane** - Développeur
 
 ### Répartition des tâches
 
-- **Nom Prénom** : Fonctions de génération et menu
-- **Nom Prénom** : Analyse de force et validation
-- **Nom Prénom** : Historique et sauvegarde
+- **Monchicourt Axel** : Fonctions de génération, menu et interface, ajouter les comptes, nettoyage général du code et contribution au README
+- **Sidibe Aboubakr Sidick** : Fonction d'analyse de force, sauvegarde des fichiers, contribution au README et préparation de l'oral
+- **Kouadio Oceane** : Fonction lister, calculer les statisques, rechercher et préparation de l'oral
 
 ## Contexte pédagogique
 
@@ -109,6 +114,12 @@ Projet réalisé dans le cadre du module **1PRJ1 - Projet Python Fondamental** �
 - Gestion de projet avec Git
 - Documentation technique
 
+##  Technologies utilisées
+
+- Pycharm
+- Modules : json, random, import, string, os
+- Git Bash
+
 ## Licence
 
 Projet étudiant - École IT - 2025-2026
@@ -117,5 +128,4 @@ Projet étudiant - École IT - 2025-2026
 
 Pour toute question : 111916@ecole-it.com
 
-message.txt
-4 Ko
+
