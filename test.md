@@ -6,7 +6,14 @@ generer_mdp()
 >>>WAKY!muga!fUji@SuwAbi4
  ```
  
-- [X] test analyser_force() : Le score du mot de passe 'WAKY!muga!fUji@SuwAbi4' est 100/100 et son niveau est : Très Fort
+- [X] test analyser_force() :
+
+```
+mdp = WAKY!muga!fUji@SuwAbi4
+analyser_force(mdp)
+>>> (100, 'Très Fort')
+ ```
+
 - [ ] test ajouter_compte() : 
 - [ ] test lister_comptes() :
 - [ ] test rechercher() :
