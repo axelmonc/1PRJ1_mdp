@@ -24,10 +24,9 @@ Application Python permettant de générer des mots de passe sécurisés avec an
 
 ```bash
 # Cloner le projet
-git clone https://github.com/votre-nom/generateur-mdp.git
+git clone https://github.com/axelmonchicourt/1PRJ1.git
 cd generateur-mdp
 
-# Aucune dépendance externe requise
 ```
 
 ### Lancement
@@ -100,8 +99,8 @@ generateur-mdp/
 
 ### Répartition des tâches
 
-- **Monchicourt Axel** : Fonctions de génération, menu et interface, ajouter les comptes, nettoyage général du code et contribution au README
-- **Sidibe Aboubakr Sidick** : Fonction d'analyse de force, sauvegarde des fichiers, contribution au README et préparation de l'oral
+- **Monchicourt Axel** : Fonctions de génération, menu et interface, ajouter les comptes et nettoyage général du code 
+- **Sidibe Aboubakr Sidick** : Fonction d'analyse de force, sauvegarde des fichiers et écriture du README 
 - **Kouadio Oceane** : Fonction lister, calculer les statisques, rechercher et préparation de l'oral
 
 ## Contexte pédagogique
