@@ -76,7 +76,7 @@ Force : Très Fort
 generateur-mdp/
 │
 ├── main.py              # Code principal
-├── donnees.json       # Fichier de sauvegarde (généré automatiquement)
+├── passwords.json       # Fichier de sauvegarde (généré automatiquement)
 ├── README.md            # Documentation
 
 ```
