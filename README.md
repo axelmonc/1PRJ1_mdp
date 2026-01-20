@@ -44,8 +44,8 @@ python3 main.py
    - **3. ajouter un compte** : ajoute un mot de passe dans un compte du fichier json
    - **5. lister les comptes** : Afficher la liste des comptes et mots de passe présent dans le fichier json
    - **5. rechercher un compte** : recherche si un compte et son mot de passe sont présent dans le fichier json  
-   - **6. Calculer les statistiques** : affiche la force et le compte du mot de passe
-   - **7. sauvegarder un mot de passe** : enregistre automatiquement les comptes et leur mot de passe dans le fichier json  
+   - **6. Calculer les statistiques** : affiche le site, la catégorie, le mot de passe, la force et le score du mot de passe associé au compte
+   - **7. sauvegarder un mot de passe** : enregistre automatiquement les comptes dans le fichier json  
    - **0. Quitter** : Ferme l'application
 
 ### Exemple d'utilisation
