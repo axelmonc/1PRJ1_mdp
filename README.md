@@ -74,7 +74,7 @@ Sauvegardé dans l'historique
 ## Structure du projet
 
 ```
-generateur-mdp/
+1PRJ1_mdp/
 │
 ├── main.py              # Code principal
 ├── passwords.json       # Fichier de sauvegarde (généré automatiquement)
