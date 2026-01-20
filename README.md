@@ -17,7 +17,7 @@ Application Python permettant de générer des mots de passe sécurisés avec an
 ## Prérequis
 
 - Python 3.8 ou supérieur
-- Modules standard Python (random, string, os)
+- Modules standard Python (random, string, datetime)
 
 
 ### Installation
@@ -116,7 +116,7 @@ Projet réalisé dans le cadre du module **1PRJ1 - Projet Python Fondamental** �
 ##  Technologies utilisées
 
 - Pycharm
-- Modules : json, random, import, string, os
+- Modules : json, random, import, string, datetime
 - Git Bash
 
 ## Licence
